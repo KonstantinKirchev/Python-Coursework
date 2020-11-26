@@ -3,16 +3,16 @@ from roles import Role
 from category import Category
 from product import Product
 
-users_count = -1
-categories_count = -1
-products_count = -1
+users_count = 0
+categories_count = 0
+products_count = 0
 
 def seed_users():
 	users = []
-	users.append(User(users_counter(), 'Konstantin', 'Blueeagle', 'qwerty', Role.ADMIN, '38 Petko Karavelov str.'))
-	users.append(User(users_counter(), 'Anna', 'AnnaTopolska', 'qwerty', Role.CUSTOMER, '38 Solunska str.'))
-	users.append(User(users_counter(), 'Ivan', 'IvanIvanov', 'qwerty', Role.CUSTOMER, '38 Petko Karavelov str.'))
-	users.append(User(users_counter(), 'Georgi', 'GeorgiKirchev', 'qwerty', Role.CUSTOMER, '38 Petko Karavelov str.'))
+	users.append(User(users_counter(), 'Konstantin', 'Blueeagle', 'qwerty', 'kosta1@yahoo.com', Role.ADMIN, '38 Petko Karavelov str.'))
+	users.append(User(users_counter(), 'Anna', 'AnnaTopolska', 'qwerty1', 'kos1@yahoo.com', Role.CUSTOMER, '38 Solunska str.'))
+	users.append(User(users_counter(), 'Ivan', 'IvanIvanov', 'qwerty2', 'ko2@yahoo.com', Role.CUSTOMER, '38 Petko Karavelov str.'))
+	users.append(User(users_counter(), 'Georgi', 'GeorgiKirchev', 'qwerty3', 'kosta1@gmail.co', Role.CUSTOMER, '38 Petko Karavelov str.'))
 
 	return users
 	
