@@ -35,9 +35,15 @@ def categories_counter():
 
 def seed_products():
 	return [
-		Product(products_counter(), 'bananas', 'very delicious fruits', 1.99, 1000, 0),
-		Product(products_counter(), 'tomatoes', 'very delicious vegetables', 2.99, 5000, 1),
-		Product(products_counter(), 'salmon', 'very delicious fish', 12.99, 100, 2)
+		Product(products_counter(), 'bananas', 'very delicious bananas', 1.99, 1000, 0),
+		Product(products_counter(), 'tomatoes', 'very delicious tomatoes', 2.99, 5000, 1),
+		Product(products_counter(), 'salmon', 'very delicious salmon', 12.99, 100, 2),
+		Product(products_counter(), 'apples', 'very delicious apples', 2.59, 2000, 0),
+		Product(products_counter(), 'grapes', 'very delicious grapes', 1.39, 3200, 0),
+		Product(products_counter(), 'cucumbers', 'very delicious cucumbers', 3.19, 2600, 1),
+		Product(products_counter(), 'potatoes', 'very delicious potatoes', 0.99, 10000, 1),
+		Product(products_counter(), 'cod', 'very delicious cod', 8.99, 200, 2),
+		Product(products_counter(), 'bass', 'very delicious bass', 9.99, 400, 2)
 	]
 
 def products_counter():

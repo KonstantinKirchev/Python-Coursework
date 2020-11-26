@@ -48,6 +48,28 @@ while(operation != 4):
 					Navigation_Manager.show_category_menu()
 					operation = int(input())
 					print('---------------------------')
+					while(operation != 0):
+						if operation == 6:
+							for product in products:
+								if product.categoryId == 0:
+									print(f'{product.id}.{product.name} - ${product.price}')
+						elif operation == 7:
+							for product in products:
+								if product.categoryId == 1:
+									print(product.name, product.description, product.price, product.categoryId)
+						elif operation == 8:
+							for product in products:
+								if product.categoryId == 2:
+									print(product.name, product.description, product.price, product.categoryId)
+						elif operation == 0:
+							Navigation_Manager.show_init_menu()
+						print("0.Go back")
+						operation = int(input())
+						print('---------------------------')
+					if operation == 0:
+						Navigation_Manager.show_logged_user_menu()
+						operation = int(input())
+						print('---------------------------')
 		else:
 			Navigation_Manager.show_init_menu()
 	elif operation == 2:
